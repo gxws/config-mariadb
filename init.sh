@@ -10,7 +10,7 @@ yum -y install galera MariaDB-Galera-server MariaDB-client
 echo "修改mariadb配置"
 mariadb_server_cnf=/etc/my.cnf.d/my-innodb-heavy-4G.cnf
 cp -f /usr/share/mysql/my-innodb-heavy-4G.cnf $mariadb_server_cnf
-sed -i -e '/\[mysqld\]/a\ datadir=/home/mysql/data' $mariadb_server_cnf
+sed -i -e '/\[mysqld\]/a\ datadir='"${mariadb_data_base}"'' $mariadb_server_cnf
 
 
 echo "修改wsrep配置"
