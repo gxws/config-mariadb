@@ -21,7 +21,9 @@ MariaDB的galera集群配置，使用mariadb multi-master多主方式。<br />
 四层负载均衡，可以用lvs做负载均衡，用keepalived做主机节点有效性检测。
 
 ### 5、访问
-使用DNS配置域名mysql.gxwsxx.com，或dev.mysql.gxwsxx.com。
+使用DNS配置域名
+开发项目连接dev.mysql.gxwsxx.com。
+内部应用连接mysql.gxwsxx.com。
 
 
 
