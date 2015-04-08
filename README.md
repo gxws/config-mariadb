@@ -5,22 +5,22 @@ mariadb服务器配置
 
 说明
 ---
-###1、文档
+### 1、文档
 [mariadb文档](http://mariadb.org/)
 
-###2、服务器结构
+### 2、服务器结构
 由3台服务器组成的集群，每台服务器运行1个mariadb实例。<br />
 集群结构为多机单实例方式。
 
-###3、目录结构
+### 3、目录结构
 数据库实例根目录在/home/mysql/data。<br />
 
-###4、集群模式
+### 4、集群模式
 MariaDB的galera集群配置，使用mariadb multi-master多主方式。<br />
 三层负载均衡，用dns配置ip负载均衡。<br />
 四层负载均衡，可以用lvs做负载均衡，用keepalived做主机节点有效性检测。
 
-###5、访问
+### 5、访问
 使用DNS配置域名mysql.gxwsxx.com，或dev.mysql.gxwsxx.com。
 
 
