@@ -25,7 +25,7 @@ MariaDB的galera集群配置，使用mariadb multi-master多主方式。<br />
 
 
 
-单实例集群手动配置教程
+多机单实例集群手动配置教程
 ---
 
 ## 一、安装MariaDB集群
@@ -101,5 +101,5 @@ wsrep_cluster_address="gcomm://192.168.x.x:4567"
 [root@localhost my.cnf.d]# systemctl start mysql.service
 ```
 
-单实例集群手动配置教程
+多机多实例集群手动配置教程
 ---
